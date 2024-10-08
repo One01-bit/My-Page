@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25;}
+ul{ list-style: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 10px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 185);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: blueviolet; }
+
+.color-hola{ color: white; }
+
+header{
+    background-color: rgb(245, 245, 245);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blue;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(255, 251, 251);
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 0, 221, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/descarga.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#tomate-un-cafe .container{
+    text-align: center;
+    padding: 200px 12px ;
+}          
+
+#tipos-lenguajes{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#tipos-lenguajes .container{
+    padding: 100px 50px;
+}
+
+#tipos-lenguajes h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#tipos-lenguajes p{
+    display: none;
+}
+
+#tipos-lenguajes .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 10px 10px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/med-ia3.jpeg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/med-ia1.jpeg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/media-333.jpeg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#toma-cafe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#toma-cafe h2{
+    font-size: 4vw;
+}
+
+#toma-cafe button{
+    font-size: 3vw;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-items: center;
+    align-items: flex-end;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 10px;
+    }
+
+    #hero h1{
+        font-size: 4em;
+    }
+
+    #tomate-un-cafe .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #tomate-un-cafe .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #tomate-un-cafe h2{
+        margin-top: 0px;
+    }
+
+    #tomate-un-cafe .img-container{
+        background-image: url(media/media-33.jpeg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #tipos-lenguajes .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #tipos-lenguajes p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #tipos-lenguajes h3{
+        background-size: 10em;
+    }
+
+    #tipos-lenguajes .carta{
+        padding: 50px;
+        background-size: 100% 140px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50, 50, 50, 0.5);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        )
+        ,url("media/recorted/media-1.jpeg");
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/recorted/media-2.jpeg");
+    }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/recorted/media-3.jpeg");
+    }
+
+    #caracteristicas{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url(media/recorted/descarga.jpeg);
+        background-position: 0px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #toma-cafe h2{
+        font-size: 4em;
+    }
+
+    #toma-cafe button{
+        font-size: 2em;
+    }
+
+    footer .container{
+       justify-content: flex-end;
+    }
+
+}
